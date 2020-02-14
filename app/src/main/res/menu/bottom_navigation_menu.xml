@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/selector_home_page"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/communicationsFragment"
+        android:icon="@drawable/selector_communication"
+        android:title="@string/communications" />
+
+    <item
+        android:id="@+id/workshopFragment"
+        android:icon="@drawable/selector_maintenance"
+        android:title="@string/workshop" />
+
+    <item
+        android:id="@+id/documentsFragment"
+        android:icon="@drawable/selector_document"
+        android:title="@string/documents" />
+
+    <item
+        android:id="@+id/saleFragment"
+        android:icon="@drawable/selector_upload_to_ftp"
+        android:title="@string/sale" />
+</menu>

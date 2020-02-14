@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="message"
+            type="com.sample.blueline.models.Message" />
+
+        <variable
+            name="handler"
+            type="com.sample.blueline.handlers.MessageHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{(view) -> handler.show(view,message)}"
+        android:paddingStart="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_normal"
+        android:paddingBottom="@dimen/padding_small">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/circle_blue_small"
+            app:isGone="@{message.read}" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_normal"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:alpha="@{message.read? 0.65f: 1f}"
+            android:ellipsize="end"
+            app:isBold="@{!message.read}"
+            android:text="@{message.title}"
+            android:textColor="@color/colorIndigo"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold"
+            tools:text="@tools:sample/cities" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:alpha="@{message.read? 0.65f: 1f}"
+            app:isBold="@{!message.read}"
+            android:text="@{message.date}"
+            android:textColor="@color/colorIndigo"
+            android:textSize="@dimen/text_size_12sp"
+            tools:text="@tools:sample/cities"
+            android:layout_marginLeft="@dimen/margin_normal" />
+    </LinearLayout>
+</layout>

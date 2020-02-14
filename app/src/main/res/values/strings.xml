@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Blueline</string>
+
+    <string name="home">Home</string>
+    <string name="communications">Comunicazioni </string>
+    <string name="workshop">Officina</string>
+    <string name="documents">Documenti</string>
+    <string name="sale">Vendita</string>
+
+    <string name="back">Indietro</string>
+</resources>

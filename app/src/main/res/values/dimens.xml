@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+
+    <dimen name="stroke_width_small">1dp</dimen>
+    <dimen name="stroke_width_normal">2dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">@dimen/text_size_10sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">@dimen/text_size_10sp</dimen>
+
+    <dimen name="message_circle_size">6dp</dimen>
+</resources>

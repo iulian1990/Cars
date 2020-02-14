@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/communicationsFragment">
+
+    <fragment
+        android:id="@+id/messageDetailFragment"
+        android:name="com.sample.blueline.fragments.MessageDetailFragment"
+        android:label="fragment_message_detail"
+        tools:layout="@layout/fragment_message_detail" >
+        <argument
+            android:name="message"
+            app:argType="com.sample.blueline.models.Message" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sample.blueline.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/communicationsFragment"
+        android:name="com.sample.blueline.fragments.CommunicationsFragment"
+        android:label="fragment_communications"
+        tools:layout="@layout/fragment_communications" >
+        <action
+            android:id="@+id/action_communicationsFragment_to_messageDetailFragment"
+            app:destination="@id/messageDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workshopFragment"
+        android:name="com.sample.blueline.fragments.WorkshopFragment"
+        android:label="fragment_workshop"
+        tools:layout="@layout/fragment_workshop" />
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="com.sample.blueline.fragments.DocumentsFragment"
+        android:label="fragment_documents"
+        tools:layout="@layout/fragment_documents" />
+    <fragment
+        android:id="@+id/saleFragment"
+        android:name="com.sample.blueline.fragments.SaleFragment"
+        android:label="fragment_sale"
+        tools:layout="@layout/fragment_sale" />
+</navigation>
